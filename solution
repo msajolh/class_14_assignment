@@ -1,0 +1,73 @@
+import math
+
+a = float(input('Enter value of a: '))
+b = float(input('Enter value of b: '))
+c = float(input('Enter value of c: '))
+
+s = (a+b+c)/2
+#print(s)
+area =math.sqrt(s*(s-a)*(s-b)*(s-c))
+print(f'The area of triangle is {area:.2f}')
+
+#problem 2
+
+'''import cmath
+
+print('Here\'s the Format of Quadratic Eqn: ax^2 + bx + c')
+a = int(input('Enter the value of a:'))
+b = int(input('Enter the value of b:'))
+c = int(input('Enter the value of c:'))
+
+d = (b**2)-(4*a*c)
+
+x1 = ((-b) + cmath.sqrt(d))/(2*a)
+x2 = ((-b) - cmath.sqrt(d))/(2*a)
+print(f'The result of x is: {x1} and {x2}')'''
+
+#problem 03
+
+#Kilometer to mile
+'''while True:
+    k = float(input('Enter distance in km: '))
+    m = 0.621*k
+    print(f'{k} km = {m} mile')'''
+
+# problem 04
+
+'''x= int(input('Enter a number: '))
+if(x > 1 ):
+    for i in range(2, x):
+        if(x % i == 0):
+            print(f'{x} is not prime')
+            break
+    else:
+        print(f'{x} is prime')
+
+else:
+    print(f'{x} is not prime.')'''
+    
+#problem number 05
+
+'''x= int(input('Enter initial value: '))
+y= int(input('Enter final value: '))
+
+count = 0
+if(x > 1):
+    for i in range(x,y):
+        for j in range(2, i-1):
+            if(i % j == 0):
+                count += 1
+                # print(i)
+                break
+        else:
+            print(i)'''
+
+
+#problem 06 factorial
+'''a = int(input('Enter number: '))
+
+num = 1
+for i in range(a):
+    num += num*i
+    # break
+print(f'factorial {a} is: ', num)'''
